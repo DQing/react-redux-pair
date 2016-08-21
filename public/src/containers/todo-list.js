@@ -11,6 +11,7 @@ function select(state) {
     if (state.filterName === 'Complete') {
         return state.todos.filter((element)=>element.isDone)
     }
+    return state.todos;
 }
 function mapStateToProps(state) {
 
